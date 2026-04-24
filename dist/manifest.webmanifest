@@ -1,0 +1,18 @@
+{
+  "name": "WAIF - Smart Schedule Lite",
+  "short_name": "WAIF",
+  "description": "Offline-first calendar and time-block planner for students and private tutors.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07111d",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

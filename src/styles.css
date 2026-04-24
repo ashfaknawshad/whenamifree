@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --waif-bg: 245 247 250;
+  --waif-fg: 15 23 42;
+}
+
+.dark {
+  color-scheme: dark;
+  --waif-bg: 2 6 23;
+  --waif-fg: 226 232 240;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: rgb(var(--waif-fg));
+  background-color: rgb(var(--waif-bg));
+  font-family: "Trebuchet MS", "Aptos", "Segoe UI", sans-serif;
+  background-image:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(244, 63, 94, 0.12), transparent 24%),
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px, 28px 28px;
+  background-position: center, center, center, center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(20, 184, 166, 0.22);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
